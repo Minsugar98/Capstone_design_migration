@@ -22,5 +22,7 @@
 - 작성중
 
 ### Lib 및 크롤링
-https://github.com/Bridge-NOONGIL/KorToBraille_Python
-https://github.com/Bridge-NOONGIL/BrailleToKor_Python
+
+[한글 -> 점자 도움](https://github.com/Bridge-NOONGIL/KorToBraille_Python)
+
+[점자 -> 한글 도움](https://github.com/Bridge-NOONGIL/BrailleToKor_Python)
