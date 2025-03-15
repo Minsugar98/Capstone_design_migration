@@ -11,7 +11,9 @@ class AppConfig:
         'output': './assets/img/result_2.png',
         'size': 'kv/img/size_img.png',
         'threshold': './assets/img/thre_img.png',
-        'resize': './assets/img/resize.png'
+        'resize': './assets/img/resize.png',
+        'save': './assets/img/save.png'
+        
     }
 
     BRAILLE = [('000000', '⠀'), ('011101', '⠮'), ('000010', '⠐'), ('001111', '⠼'), ('110101', '⠫'),

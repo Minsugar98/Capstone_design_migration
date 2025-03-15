@@ -23,11 +23,11 @@
 
             Label:
                 size_hint:(1,.3)
-
-            Camera:
-                id: camera
-                resolution: (640, 480)
-                play: False
+            BoxLayout:
+                id: camera_layout
+                size_hint: (1, 0.7)
+                # 여기에 OpenCV 카메라 이미지가 표시됨
+            
             BoxLayout:
                 orientation:'horizontal'
                 Button:
