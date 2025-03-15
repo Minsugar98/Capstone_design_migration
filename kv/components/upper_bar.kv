@@ -1,0 +1,21 @@
+<UpperBar>:
+    BoxLayout:
+    Button:
+        size_hint: (0.1, .8)
+        #size: self.texture_size
+        text: 'help'
+        on_press: Factory.HelpPop().open()
+        pos_hint:{'center_y':0.5}
+    Label:
+        size_hint: (0.01, .8)
+    Button:
+        size_hint : (0.1, .8)
+        #size: self.texture_size
+        text: 'Home'
+        pos_hint:{'center_y': 0.5}
+        on_press:
+            app.root.transition.direction = 'right'
+            app.root.current = 'main'
+    Label:
+        size_hint: (0.01, .8)
+

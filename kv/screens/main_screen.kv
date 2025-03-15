@@ -1,0 +1,83 @@
+<MainScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        canvas:
+            Color:
+                rgba:(1,1,1,1)
+            Rectangle:
+                pos: self.pos
+                size: self.size
+
+
+        UpperBar:
+            size_hint: (1, 0.1)
+            canvas.before:
+                Color:
+                    rgb:(148/255, 193/255, 1, 1)
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+
+        BoxLayout:
+            orientation:'vertical'
+
+            Label:
+                text:'점점'
+                font_name: 'font2.ttf'
+                font_size:'30sp'
+                size_hint: (0.1, 0.18)
+                color:(0,0,0)
+                pos_hint:{'center_x':0.5}
+
+            Image:
+                source: 'kv/img/logo.png'
+                size_hint:(1, 0.3)
+
+            Label:
+                size_hint: (0.1, 0.1)
+
+            Button:
+                size_hint: (0.3, 0.05)
+                font_name: 'font2.ttf'
+                pos_hint: {'center_x' : 0.5, 'center_y':0.3}
+                text: '점자 이미지 → 문자 번역'
+                font_size:'20sp'
+                background_normal:''
+                background_color:rgba("#94c1ff")
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.current = 'itoj'
+
+            Label:
+                size_hint: (0.1, 0.01)
+
+            Button:
+                size_hint: (0.3, 0.05)
+                pos_hint: {'center_x' : 0.5}
+                font_name: 'font2.ttf'
+                text: '문자 → 점자 텍스트'
+                font_size:'20sp'
+                background_normal:''
+                background_color:rgba("#94c1ff")
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.current = 'ktojt'
+
+            Label:
+                size_hint: (0.1, 0.01)
+
+            Button:
+                size_hint: (0.3, 0.05)
+                font_name: 'font2.ttf'
+                pos_hint: {'center_x' : 0.5}
+                text: '점자 텍스트 → 문자'
+                font_size:'20sp'
+                background_normal:''
+                background_color:rgba("#94c1ff")
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.current = 'jttok'
+
+            Label:
+                size_hint: (0.1, 0.1)

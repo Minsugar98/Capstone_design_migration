@@ -1,0 +1,46 @@
+
+<KotojumtxtScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+
+        UpperBar:
+            size_hint: (1, 0.1)
+            canvas.before:
+                Color:
+                    rgb:(148/255, 193/255, 1, 1)
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        BoxLayout:
+            orientation:'vertical'
+            size_hint:(1, 0.9)
+            canvas:
+                Color:
+                    rgb:(1,1,1)
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+#            BoxLayout:
+#                orientation:'vertical'
+#                size_hint:(.2, .1)
+#                canvas:
+#                    Color:
+#                        rgb:(148/255, 193/255, 1, 1)
+#                    Rectangle:
+#                        pos: self.pos
+#                        size: self.size
+#
+#                Label:
+#                    text:'점점'
+#                    font_name: 'font2.ttf'
+#                    font_size:'30sp'
+#                    size_hint: (.2, .1)
+#                    color:(0,0,0)
+#                    pos_hint:{'center_x':0.2}
+#
+#            Label:
+#                size_hint:(.1, .5)
+
+

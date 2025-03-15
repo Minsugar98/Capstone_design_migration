@@ -1,0 +1,76 @@
+<EditScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+
+        UpperBar:
+            size_hint: (1, 0.1)
+            canvas.before:
+                Color:
+                    rgb:(148/255, 193/255, 1, 1)
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        BoxLayout:
+            orientation:'vertical'
+            size_hint:(1, 0.9)
+            canvas:
+                Color:
+                    rgba:(1,1,1,1)
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            Label:
+                size_hint:(1, .5)
+
+            BoxLayout:
+                orientation:'vertical'
+
+                Label:
+                    size_hint:(.01, .2)
+
+                Button:
+                    size_hint: (.5, .3)
+                    pos_hint: {'center_x': 0.5,'center_y': 0.7}
+                    background_normal:''
+                    background_color:(148/255, 193/255, 1, 1)
+                    text:'점자 영역 설정'
+                    font_name: 'font2.ttf'
+                    color:(0,0,0)
+                    on_press: root.Editimg()
+
+                Label:
+                    size_hint:(.01, .2)
+
+                Button:
+                    size_hint: (.5, .3)
+                    pos_hint: {'center_x': 0.5,'center_y': 0.6}
+                    background_normal:''
+                    background_color:(148/255, 193/255, 1, 1)
+                    text:'문자 인식 영역 설정'
+                    font_name: 'font2.ttf'
+                    color:(0,0,0)
+                    on_press: root.Editimg2()
+
+                Label:
+                    size_hint:(.01, .2)
+
+                Button:
+                    size_hint: (.5, .3)
+                    pos_hint: {'center_x': 0.5,'center_y': 0.4}
+                    background_normal:''
+                    font_name: 'font2.ttf'
+                    background_color:(148/255, 193/255, 1, 1)
+                    text:'다음'
+                    color:(0,0,0)
+
+                    on_press:
+                        root.manager.transition.direction = 'right'
+                        root.manager.current = 'came'
+                        root.braille()
+
+                Label:
+                    size_hint:(.01, .8)
+
+            Label:
+                size_hint:(1, .4)

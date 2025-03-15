@@ -1,0 +1,61 @@
+
+<ImagetojumScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+#        canvas:
+#            Color:
+#                rgba:(1,1,1,1)
+#            Rectangle:
+#                pos: self.pos
+#                size: self.size
+
+        UpperBar:
+            size_hint: (1, 0.1)
+            canvas.before:
+                Color:
+                    rgb:(148/255, 193/255, 1, 1)
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+
+        BoxLayout:
+            orientation:'vertical'
+            #size_hint:(1, 0.9)
+            canvas:
+                Color:
+                    rgba:(1,1,1,1)
+                Rectangle:
+                    pos: self.pos
+                    size: self.size
+            Label:
+                color:(0,0,0)
+                size_hint:(1, 0.3)
+            Button:
+                text:'사진 촬영'
+                font_name: 'font2.ttf'
+                background_normal:''
+                background_color:rgba("#94c1ff")
+                color:(1,1,1)
+                size_hint: (0.2, 0.08)
+                pos_hint: {'center_x' : 0.5}
+                font_size:'20sp'
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.current = 'came'
+            Label:
+                size_hint: (0.1, 0.01)
+            Button:
+                text:'앨범'
+                background_normal:''
+                font_name: 'font2.ttf'
+                background_color:rgba("#94c1ff")
+                color:(1,1,1)
+                size_hint: (0.2, 0.08)
+                pos_hint: {'center_x' : 0.5}
+                font_size:'20sp'
+                on_press:
+                    root.manager.transition.direction = 'left'
+                    root.manager.current = 'alb'
+            Label:
+                color:(0,0,0)
+                size_hint:(1, 0.3)

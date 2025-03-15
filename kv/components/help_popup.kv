@@ -1,0 +1,20 @@
+<HelpPop@Popup>:
+    size_hint: (0.5, 0.8)
+    title: 'Help'
+    auto_dismiss: True
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        ScrollView:
+            effect_cls: "ScrollEffect"
+
+            BoxLayout:
+                orientation: 'vertical'
+                size_hint_y: None
+                height: self.minimum_height
+
+                Image:
+                    source: 'kv/img/help.jpg'
+                    size_hint: (1, None)
+                    height: self.texture_size[1]
