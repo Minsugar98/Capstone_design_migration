@@ -14,15 +14,43 @@
 - 메모 기능
 
 
-# 실행
-- 작성중
+# 실행 및 패키지 설치
+```
+pip install kivy
+pip install opencv-python
+pip install numpy 
+pip install matplotlib
+pip install selenium    
+pip install chromedriver-autoinstaller
+pip install pillow
 
 
-### 기술 스택
-- 작성중
+python main.py
+```
 
-### Lib 및 크롤링
+| 패키지 | 설명 | 버전 |
+|-------|------|------|
+| kivy | UI 프레임워크 | 2.1.0 |
+| opencv-python | 이미지 처리 및 카메라 기능 | 4.7.0.68 |
+| numpy | 배열 및 행렬 처리 | 1.21.5 |
+| matplotlib | 그래픽 및 이미지 저장 | 3.7.1 |
+| selenium | 웹 브라우저 자동화 | 4.8.2 |
+| chromedriver-autoinstaller | Chrome 드라이버 자동 설치 | 0.4.0 |
+| pillow | 이미지 처리 | 9.2.0 |
+
+
+# 기술 스택
+### Front
+- Kivy
+
+### Back
+- opencv-python, selenium, pillow, numpy
+
+
+# Lib 및 크롤링
 
 [한글 -> 점자 도움](https://github.com/Bridge-NOONGIL/KorToBraille_Python)
 
 [점자 -> 한글 도움](https://github.com/Bridge-NOONGIL/BrailleToKor_Python)
+
+[크롤링](https://abcbraille.com/)
